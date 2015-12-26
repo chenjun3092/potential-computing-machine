@@ -1,4 +1,4 @@
-FROM 192.168.4.12:80/chenjun_nodejs:1.0
+FROM  192.168.4.12:80/chenjun-nodejs-base:1.0
 MAINTAINER chenjun <jun.chen@cloudsoar.com>
 
 VOLUME noderoot
