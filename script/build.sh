@@ -4,6 +4,4 @@ if [ -z "${1}" ]; then
 else
    version="${1}"
 fi
-cd ../
-docker build -t 192.168.4.12:80/chenjun-nodejs-jsweb:${version} .
-cd ..
+docker build -t 192.168.4.12:80/chenjun-nodejs-jsweb:${version} ../
