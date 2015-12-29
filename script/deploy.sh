@@ -1,11 +1,11 @@
 #!/bin/bash
 
 if [ -z "${1}" ]; then
-   version="latest"
+   incre=0
 else
-   version="${1}"
+   incre="${1}"
 fi
 
-webport=$[8080+$[version]]
+webport=$[8080+$[incre]]
 
-docker run -d --name Test-Web-"$[webport]" -p "$[webport]":8080 192.168.4.12:80/chenjun-nodejs-jsweb:"${version}"
+docker run -d --name Test-Web-"$[webport]" -p "$[webport]":8080 192.168.4.12:80/chenjun-nodejs-jsweb:"${incre}"
