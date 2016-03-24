@@ -5,4 +5,4 @@ else
    version="${1}"
 fi
 
-docker build -t 192.168.180.102:9001/chenjun-nodejs-jsweb:${version} .
+docker build -t 192.168.180.100:80/chenjun-nodejs-jsweb:${version} .
